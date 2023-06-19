@@ -1,0 +1,32 @@
+@startuml
+entity "ユーザー" as e1 {
+ユーザーid(PK)
+--
+名前
+}
+
+entity "商品" as e2 {
+商品名(PK)
+--
+値段
+カテゴリーid(FK)
+}
+
+entity "カテゴリー" as e3 {
+カテゴリーid(PK)
+--
+カテゴリー名
+}
+
+entity "購入履歴" as e4 {
+購入番号(PK)
+--
+ユーザーid(FK)
+購入日時
+商品名(FK)
+}
+
+e1 ||..o{ e4
+e2 }o..|| e3
+e2 ||..o{ e4
+@enduml

@@ -1,0 +1,428 @@
+html {
+  font-size: 18px;
+}
+
+body {
+  width: 100%;
+}
+
+header {
+  height: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.5fr 1fr;
+  row-gap: 0px;
+}
+
+.title {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  margin: auto;
+  font-weight: bold;
+}
+
+.header-menu {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.header-menu h3 {
+  margin: 0 10px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+
+.main-visual {
+  position: relative;
+  margin: 0 0 2rem 0;
+}
+
+.main-visual img {
+  width: 100vw;
+}
+
+.main-visual .item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: auto;
+  transform: translate(-50%, -50%);
+  display: grid;
+  gap: 10px;
+}
+
+.main-visual .item h1, .main-visual .item p {
+  text-align: center;
+}
+
+.main-visual .item h1 {
+  font-size: 1.5rem;
+  line-height: 1.5em;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+}
+
+.main-visual .item p {
+  font-size: 0.7rem;
+  line-height: 1rem;
+  font-weight: bold;
+}
+
+.main-visual .item p span {
+  display: inline-block;
+}
+
+.about-daytra {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 1fr;
+  grid-template-rows: 50px 2fr;
+  gap: 20px;
+  padding-bottom: 50px;
+}
+
+.about-daytra h2 {
+  grid-column: 2/4;
+  grid-row: 1/2;
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.about-daytra img {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  width: 100%;
+
+}
+
+.about-daytra p {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+
+.course {
+  width: 100%;
+  height: 500px;
+  display: block;
+}
+
+.course h2 {
+  margin: 20px 0;
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.course_img {
+  display: grid;
+  grid-template-columns: 50px 2fr 2fr 2fr 50px;
+  column-gap: 20px;
+}
+
+.first {
+  grid-column: 2/3;
+}
+.first img {
+  width: 100%;
+}
+
+.first p, .second p, .third p {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.second {
+  grid-column: 3/4;
+}
+
+.second img {
+  width: 100%;
+}
+
+.third {
+  grid-column: 4/5;
+}
+
+.third img {
+  width: 100%;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr;
+  height: 600px;
+}
+
+.contact .detail {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  text-align: center;
+}
+
+.detail h2 {
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.detail p {
+  font-weight: bold;
+  font-size: 14px;
+  padding-bottom: 5px;
+}
+
+.mail {
+  border: solid gray 2px;
+  border-radius: 30px;
+  width: 100%;
+  height: 30px;
+}
+
+.submit {
+  width: 70%;
+  border: solid rgb(236, 108, 108) 1px;
+  border-radius: 5px;
+  background-color: rgb(236, 108, 108);
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 20px 0 100px 0;
+  padding: 20px 0;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+footer .content {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  border-top: 1px solid rgba(190, 190, 190, 0.352);
+  padding: 15px 0 50px 0;
+
+}
+
+footer p {
+  text-align: right;
+  font-size: 10px;
+}
+
+
+@media screen and (max-width:690px) {
+  body {
+    font-size: 18px;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
+  header {
+    padding-top: 45px;
+    height: 145px;
+    display: grid;
+    grid-template-columns: 1fr 500px 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 15px;
+    }
+  
+  .title {
+    font-size: 35px;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    font-weight: bold;
+  }
+  
+  .header-menu {
+    margin: 20px 0;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+  .header-menu h3 {
+    margin: 0 10px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .main-visual {
+    height: 880px;
+    position: relative;
+    margin: 0 0 2rem 0;
+  }
+  
+  .main-visual img {
+    height: 880px;
+    width: auto;
+  }
+  
+  .main-visual .item {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    padding-left: 0 20px 0 20px 0;
+    transform: translate(-50%, -50%);
+    display: grid;
+    gap: 50px;
+  }
+  
+  .main-visual .item h1, .main-visual .item p {
+    text-align: center;
+  }
+  
+  .main-visual .item h1 {
+    font-size: 50px;
+    line-height: 1.5em;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+  }
+  
+  .main-visual .item p {
+    font-size: 24px;
+    line-height: 2em;
+    font-weight: bold;
+  }
+  
+  .about-daytra {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+  
+  .about-daytra h2 {
+    display: inline-block;
+    width: 100%;
+    padding-top: 100px;
+  }
+  
+  .about-daytra img {
+    display: inline-block;
+    width: 80%;
+    margin: 40px 0;
+  }
+  
+  .about-daytra p {
+    display: inline-block;
+  }
+  
+  .course {
+    display: block;
+    height: 1200px;
+    text-align: center;
+  }
+
+  .course h2 {
+    display: inline-block;
+    padding: 30px 0;
+  }
+
+  .course_img {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 620px 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 30px;
+  }
+  
+  .first {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .first img {
+    width: 100%;
+  }
+  
+  .second {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  
+  .second img {
+    width: 100%;
+  }
+  
+  .third {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+  
+  .third img {
+    width: 100%;
+  }
+
+  .first p, .second p, .third p {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  .contact {
+    display: block;
+    text-align: center;
+  }
+  
+  .contact .detail {
+    display: inline-block;
+    width: 90%;
+  }
+  
+  .detail h2 {
+    font-weight: bold;
+    font-size: 35px;
+    padding-top: 0;
+  }
+  
+  .detail p {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .mail {
+    border: solid gray 5px;
+    border-radius: 50px;
+    width: 100%;
+    height: 100px;
+    font-size: 35px;
+  }
+  
+  .submit {
+    width: 100%;
+    height: 150px;
+    border: solid rgb(236, 108, 108) 1px;
+    border-radius: 5px;
+    background-color: rgb(236, 108, 108);
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    margin: 40px 0 100px 0;
+    padding: 20px 0;
+  }
+  
+  footer {
+    display: block;
+    text-align: center;
+  }
+  
+  footer .content {
+    display: inline-block;
+    width: 90%;
+    border-top: 1px solid rgba(165, 160, 160, 0.352);
+    padding: 15px 0 50px 0;
+  }
+  
+  footer p {
+    text-align: center;
+    font-size: 15px;
+    padding: 40px 0;
+  }
+}

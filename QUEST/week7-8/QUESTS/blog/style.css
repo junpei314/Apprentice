@@ -1,0 +1,39 @@
+@charset "UTF-8";
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: AvenirNext, Lato, "Hirago KakuGothic ProN", Meiryo, sans-serif;
+  color: #2b546a;
+  text-decoration: none;
+}
+
+.disable-scroll {
+  overflow: hidden;
+}
+
+.hidden {
+  display: none;
+}
+
+.modal .cover {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(74,75,76, 0.9);
+}
+
+.modal .window {
+  background-color: white;
+  width: 480px;
+  height: 700px;
+  border-radius: 3px;
+  margin: auto;
+}
+
+.close:hover {
+  cursor: pointer;
+}
